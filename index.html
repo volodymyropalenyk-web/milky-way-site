@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Вовчик</title>
+  <meta name="description" content="Вовчик — настільний теніс, кубик Рубика, гра Viktolandyx та відео для KARPATY.">
+  <meta property="og:title" content="Вовчик">
+  <meta property="og:description" content="Настільний теніс, ігри та відео.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#07071a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#top" class="logo">Вов<span>чик</span></a>
+    <nav aria-label="Навігація">
+      <a href="#about">Хто я</a>
+      <a href="#tennis">Теніс</a>
+      <a href="#cube">Кубик</a>
+      <a href="#projects">Проєкти</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Хто я -->
+    <section class="hero" id="about">
+      <p class="eyebrow">✦ Особистий сайт</p>
+      <h1>Привіт, я <span class="grad">Вовчик</span></h1>
+      <p class="lead">
+        Граю в настільний теніс, збираю кубик Рубика, створюю власну гру і знімаю відео.
+      </p>
+      <div class="actions">
+        <a href="#projects" class="btn btn-primary">Мої проєкти</a>
+        <a href="#contacts" class="btn btn-ghost">Зв'язатися</a>
+      </div>
+      <ul class="tags">
+        <li>🏓 Настільний теніс</li>
+        <li>🧩 Кубик Рубика</li>
+        <li>🎮 Геймдев</li>
+        <li>🎬 Відео</li>
+      </ul>
+    </section>
+
+    <!-- Настільний теніс -->
+    <section class="section" id="tennis">
+      <h2 class="section-title"><span class="num">01</span> Настільний теніс</h2>
+      <p class="section-lead">Змагаюся на обласному рівні та за кордоном.</p>
+      <div class="grid">
+        <article class="card achievement">
+          <div class="medal">🥇</div>
+          <h3>1 місце</h3>
+          <p>Обласні змагання з настільного тенісу</p>
+          <!-- ЗАМІНИ: додай рік / назву турніру -->
+        </article>
+        <article class="card achievement">
+          <div class="medal">🥈🥉</div>
+          <h3>2 і 3 місця</h3>
+          <p>Призові місця на обласних змаганнях</p>
+          <!-- ЗАМІНИ: додай рік / назву турніру -->
+        </article>
+        <article class="card achievement">
+          <div class="medal">🏆</div>
+          <h3>Угорщина</h3>
+          <p>Призові місця на міжнародних турнірах в Угорщині</p>
+          <!-- ЗАМІНИ: додай рік / назву турніру -->
+        </article>
+      </div>
+
+      <!-- Фото з тенісу: поклади файли в папку img/ і заміни кожен div.photo-slot на
+           <figure class="photo"><img src="img/tennis-1.jpg" alt="Опис фото" loading="lazy"></figure> -->
+      <div class="gallery">
+        <div class="photo-slot">📷 Фото скоро</div>
+        <div class="photo-slot">📷 Фото скоро</div>
+        <div class="photo-slot">📷 Фото скоро</div>
+      </div>
+    </section>
+
+    <!-- Кубик Рубика -->
+    <section class="section" id="cube">
+      <h2 class="section-title"><span class="num">02</span> Кубик Рубика</h2>
+      <p class="section-lead">Обожнюю збирати кубик Рубика і постійно покращую свій час.</p>
+      <div class="card record">
+        <div class="cube" aria-hidden="true">
+          <span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+        </div>
+        <div>
+          <p class="record-label">Мій рекорд · 3×3</p>
+          <p class="record-time"><span class="grad">21</span> сек</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Проєкти -->
+    <section class="section" id="projects">
+      <h2 class="section-title"><span class="num">03</span> Мої проєкти</h2>
+      <div class="grid grid-2">
+        <article class="card project">
+          <div class="project-cover cover-game" aria-hidden="true">🎮</div>
+          <div class="project-body">
+            <span class="badge">Гра</span>
+            <h3>Viktolandyx</h3>
+            <!-- ЗАМІНИ: короткий опис гри -->
+            <p>Моя власна гра — світ, механіки й історія, придумані мною з нуля.</p>
+            <a href="#" class="link">Детальніше →</a> <!-- ЗАМІНИ: посилання -->
+          </div>
+        </article>
+        <article class="card project">
+          <div class="project-cover cover-video" aria-hidden="true">🎬</div>
+          <div class="project-body">
+            <span class="badge">Відео</span>
+            <h3>Відео для KARPATY</h3>
+            <!-- ЗАМІНИ: короткий опис відео -->
+            <p>Відеопроєкт для KARPATY: зйомка та монтаж.</p>
+            <a href="#" class="link">Дивитися →</a> <!-- ЗАМІНИ: посилання на відео -->
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Контакти -->
+    <section class="section contacts" id="contacts">
+      <h2 class="section-title"><span class="num">04</span> Контакти</h2>
+      <div class="card contact-card">
+        <p>Пиши в Telegram — відповім!</p>
+        <a href="https://t.me/milky_waychiku" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+          ✈ Telegram · @milky_waychiku
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© 2026 Вовчик</footer>
+</body>
+</html>
