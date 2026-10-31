@@ -240,6 +240,8 @@ main {
   gap: 1.25rem;
 }
 .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+/* Якщо проєкт один — картка не розтягується на всю ширину */
+.grid-2 > :only-child { max-width: 560px; }
 
 /* Досягнення */
 .achievement { padding: 1.75rem; }
@@ -250,6 +252,16 @@ main {
   font-size: 1.3rem;
 }
 .achievement p { margin: 0; color: var(--muted); }
+.achievement .year {
+  display: inline-block;
+  margin-top: 0.9rem;
+  padding: 0.15rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.12);
+  color: var(--blue);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
 
 /* Фото з тенісу */
 .gallery {
@@ -277,6 +289,13 @@ main {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+/* Одне вертикальне фото */
+.photo-single {
+  max-width: 380px;
+  margin: 1.25rem auto 0;
+  aspect-ratio: 3 / 4;
+  border: 1px solid var(--border);
 }
 
 /* Кубик Рубика */
